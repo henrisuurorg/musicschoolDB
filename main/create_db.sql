@@ -194,9 +194,9 @@ ADD CONSTRAINT FK_individual_lesson_4 FOREIGN KEY (level_id) REFERENCES level (l
 ALTER TABLE individual_lesson
 ADD CONSTRAINT FK_individual_lesson_5 FOREIGN KEY (instrument_id) REFERENCES instrument (instrument_id);
 ALTER TABLE instructor_instrument
-ADD CONSTRAINT FK_instructor_instrument_0 FOREIGN KEY (instrument_id) REFERENCES instrument (instrument_id);
+ADD CONSTRAINT FK_instructor_instrument_0 FOREIGN KEY (instrument_id) REFERENCES instrument (instrument_id) ON DELETE CASCADE;
 ALTER TABLE instructor_instrument
-ADD CONSTRAINT FK_instructor_instrument_1 FOREIGN KEY (instructor_id) REFERENCES instructor (instructor_id);
+ADD CONSTRAINT FK_instructor_instrument_1 FOREIGN KEY (instructor_id) REFERENCES instructor (instructor_id) ON DELETE CASCADE;
 ALTER TABLE instrument_fee
 ADD CONSTRAINT FK_instrument_fee_0 FOREIGN KEY (rental_instrument_id) REFERENCES rental_instrument (rental_instrument_id);
 ALTER TABLE rental_agreement
@@ -208,10 +208,10 @@ ADD CONSTRAINT FK_sibling_relationship_0 FOREIGN KEY (first_student_id) REFERENC
 ALTER TABLE sibling_relationship
 ADD CONSTRAINT FK_sibling_relationship_1 FOREIGN KEY (second_student_id) REFERENCES student (student_id);
 ALTER TABLE student_ensemble
-ADD CONSTRAINT FK_student_ensemble_0 FOREIGN KEY (ensemble_id) REFERENCES ensemble (ensemble_id);
+ADD CONSTRAINT FK_student_ensemble_0 FOREIGN KEY (ensemble_id) REFERENCES ensemble (ensemble_id) ON DELETE CASCADE;
 ALTER TABLE student_ensemble
-ADD CONSTRAINT FK_student_ensemble_1 FOREIGN KEY (student_id) REFERENCES student (student_id);
+ADD CONSTRAINT FK_student_ensemble_1 FOREIGN KEY (student_id) REFERENCES student (student_id) ON DELETE CASCADE;
 ALTER TABLE student_group_lesson
-ADD CONSTRAINT FK_student_group_lesson_0 FOREIGN KEY (group_lesson_id) REFERENCES group_lesson (group_lesson_id);
+ADD CONSTRAINT FK_student_group_lesson_0 FOREIGN KEY (group_lesson_id) REFERENCES group_lesson (group_lesson_id) ON DELETE CASCADE;
 ALTER TABLE student_group_lesson
-ADD CONSTRAINT FK_student_group_lesson_1 FOREIGN KEY (student_id) REFERENCES student (student_id);
+ADD CONSTRAINT FK_student_group_lesson_1 FOREIGN KEY (student_id) REFERENCES student (student_id) ON DELETE CASCADE;
