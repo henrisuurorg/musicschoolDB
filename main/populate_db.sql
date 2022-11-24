@@ -378,235 +378,235 @@ insert into instrument (instrument)
 values ('Triangle');
 insert into instrument (instrument)
 values ('Tambourine');
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Dukie MacGahy'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Piano'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Dukie MacGahy'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Triangle'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Dukie MacGahy'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Guitar'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Lillis Danks'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Guitar'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Lillis Danks'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Harp'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Lillis Danks'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Base'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Roby Tregale'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Piano'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Roby Tregale'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Saxophone'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Roby Tregale'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Tambourine'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Ferrell Ramelet'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Flute'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Ferrell Ramelet'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Trumpet'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Jeni Ions'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Harp'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Jacques Casaccia'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Base'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Jacques Casaccia'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Guitar'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Elianora Semens'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Triangle'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Elianora Semens'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Flute'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Arlyne Culwen'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Violin'
         )
     );
-insert into instructor_instrument (instrument_id, person_id_instructor)
+insert into instructor_instrument (instrument_id, instructor_id)
 values (
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Arlyne Culwen'
         ),
-        (
+(
             SELECT instrument_id
             FROM instrument
             WHERE instrument = 'Tambourine'
@@ -653,10 +653,10 @@ insert into pricing_schema (
         discount_percentage
     )
 values (25, 1.25, 1, 0.25, 1, 2, 3, 5);
-insert into additional_contact_person (person_id_student, name, email, phone)
+insert into additional_contact_person (student_id, name, email, phone)
 values (
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Wilmar Genty'
         ),
@@ -664,10 +664,10 @@ values (
         'learwaker0@cocolog-nifty.com',
         '495-737-3797'
     );
-insert into additional_contact_person (person_id_student, name, email, phone)
+insert into additional_contact_person (student_id, name, email, phone)
 values (
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Addia Robart'
         ),
@@ -675,10 +675,10 @@ values (
         'kkerwood1@cocolog-nifty.com',
         '927-117-5495'
     );
-insert into additional_contact_person (person_id_student, name, email, phone)
+insert into additional_contact_person (student_id, name, email, phone)
 values (
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Bob Silverstone'
         ),
@@ -686,50 +686,41 @@ values (
         'mroache2@dagondesign.com',
         '564-633-7598'
     );
-insert into sibling_relationship (
-        first_person_id_student,
-        second_person_id_student
-    )
+insert into sibling_relationship (first_student_id, second_student_id)
 values (
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Wilmar Genty'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Isadore Di Nisco'
         )
     );
-insert into sibling_relationship (
-        first_person_id_student,
-        second_person_id_student
-    )
+insert into sibling_relationship (first_student_id, second_student_id)
 values (
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Wilmar Genty'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Bryant Maxwell'
         )
     );
-insert into sibling_relationship (
-        first_person_id_student,
-        second_person_id_student
-    )
+insert into sibling_relationship (first_student_id, second_student_id)
 values (
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Isadore Di Nisco'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Bryant Maxwell'
         )
@@ -837,14 +828,14 @@ values (
 insert into rental_agreement (
         date_rented,
         date_returned,
-        person_id_student,
+        student_id,
         rental_instrument_id
     )
 values (
         '10/02/2022',
         null,
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Wilmar Genty'
         ),
@@ -857,14 +848,14 @@ values (
 insert into rental_agreement (
         date_rented,
         date_returned,
-        person_id_student,
+        student_id,
         rental_instrument_id
     )
 values (
         '10/02/2022',
         null,
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Bryant Maxwell'
         ),
@@ -877,14 +868,14 @@ values (
 insert into rental_agreement (
         date_rented,
         date_returned,
-        person_id_student,
+        student_id,
         rental_instrument_id
     )
 values (
         '10/02/2022',
         null,
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Addia Robart'
         ),
@@ -900,7 +891,7 @@ insert into ensemble (
         genre,
         time,
         date,
-        person_id_instructor,
+        instructor_id,
         pricing_schema_id,
         compensation_schema_id
     )
@@ -911,7 +902,7 @@ values (
         '18:00',
         '10/02/2022',
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Dukie MacGahy'
         ),
@@ -919,7 +910,7 @@ values (
             SELECT pricing_schema_id
             FROM pricing_schema
         ),
-        (
+(
             SELECT compensation_schema_id
             FROM compensation_schema
         )
@@ -930,7 +921,7 @@ insert into ensemble (
         genre,
         time,
         date,
-        person_id_instructor,
+        instructor_id,
         pricing_schema_id,
         compensation_schema_id
     )
@@ -941,7 +932,7 @@ values (
         '20:00',
         '12/02/2022',
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Dukie MacGahy'
         ),
@@ -949,7 +940,7 @@ values (
             SELECT pricing_schema_id
             FROM pricing_schema
         ),
-        (
+(
             SELECT compensation_schema_id
             FROM compensation_schema
         )
@@ -960,7 +951,7 @@ insert into level(level)
 values ('intermediate');
 insert into level(level)
 values ('advanced');
-insert into student_ensemble(ensemble_id, person_id_student)
+insert into student_ensemble(ensemble_id, student_id)
 values (
         (
             SELECT ensemble_id
@@ -968,12 +959,12 @@ values (
             WHERE date = '10/02/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Wilmar Genty'
         )
     );
-insert into student_ensemble(ensemble_id, person_id_student)
+insert into student_ensemble(ensemble_id, student_id)
 values (
         (
             SELECT ensemble_id
@@ -981,7 +972,7 @@ values (
             WHERE date = '12/02/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Elfrieda Brazener'
         )
@@ -1028,7 +1019,7 @@ values (
 insert into individual_lesson (
         time,
         date,
-        person_id_instructor,
+        instructor_id,
         instrument_id,
         pricing_schema_id,
         compensation_schema_id,
@@ -1038,9 +1029,9 @@ values (
         '18:00',
         '11/02/2022',
         (
-            SELECT person_id
-            FROM student
-            WHERE name = 'Wilmar Genty'
+            SELECT instructor_id
+            FROM instructor
+            WHERE name = 'Roby Tregale'
         ),
         (
             SELECT instrument_id
@@ -1064,7 +1055,7 @@ values (
 insert into individual_lesson (
         time,
         date,
-        person_id_instructor,
+        instructor_id,
         instrument_id,
         pricing_schema_id,
         compensation_schema_id,
@@ -1074,7 +1065,7 @@ values (
         '20:00',
         '11/04/2022',
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Roby Tregale'
         ),
@@ -1102,7 +1093,7 @@ insert into group_lesson (
         max_no_of_students,
         time,
         date,
-        person_id_instructor,
+        instructor_id,
         pricing_schema_id,
         compensation_schema_id,
         level_id,
@@ -1114,7 +1105,7 @@ values (
         '18:00',
         '10/02/2022',
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Jeni Ions'
         ),
@@ -1122,7 +1113,7 @@ values (
             SELECT pricing_schema_id
             FROM pricing_schema
         ),
-        (
+(
             SELECT compensation_schema_id
             FROM compensation_schema
         ),
@@ -1142,7 +1133,7 @@ insert into group_lesson (
         max_no_of_students,
         time,
         date,
-        person_id_instructor,
+        instructor_id,
         pricing_schema_id,
         compensation_schema_id,
         level_id,
@@ -1154,7 +1145,7 @@ values (
         '18:00',
         '08/12/2022',
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Jeni Ions'
         ),
@@ -1162,7 +1153,7 @@ values (
             SELECT pricing_schema_id
             FROM pricing_schema
         ),
-        (
+(
             SELECT compensation_schema_id
             FROM compensation_schema
         ),
@@ -1182,7 +1173,7 @@ insert into group_lesson (
         max_no_of_students,
         time,
         date,
-        person_id_instructor,
+        instructor_id,
         pricing_schema_id,
         compensation_schema_id,
         level_id,
@@ -1194,7 +1185,7 @@ values (
         '18:00',
         '05/03/2022',
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Jeni Ions'
         ),
@@ -1202,7 +1193,7 @@ values (
             SELECT pricing_schema_id
             FROM pricing_schema
         ),
-        (
+(
             SELECT compensation_schema_id
             FROM compensation_schema
         ),
@@ -1222,7 +1213,7 @@ insert into group_lesson (
         max_no_of_students,
         time,
         date,
-        person_id_instructor,
+        instructor_id,
         pricing_schema_id,
         compensation_schema_id,
         level_id,
@@ -1234,7 +1225,7 @@ values (
         '15:00',
         '04/03/2022',
         (
-            SELECT person_id
+            SELECT instructor_id
             FROM instructor
             WHERE name = 'Elianora Semens'
         ),
@@ -1242,7 +1233,7 @@ values (
             SELECT pricing_schema_id
             FROM pricing_schema
         ),
-        (
+(
             SELECT compensation_schema_id
             FROM compensation_schema
         ),
@@ -1257,7 +1248,7 @@ values (
             WHERE instrument = 'Triangle'
         )
     );
-insert into student_group_lesson (group_lesson_id, person_id_student)
+insert into student_group_lesson (group_lesson_id, student_id)
 values (
         (
             SELECT group_lesson_id
@@ -1265,12 +1256,12 @@ values (
             WHERE date = '04/03/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Wilmar Genty'
         )
     );
-insert into student_group_lesson (group_lesson_id, person_id_student)
+insert into student_group_lesson (group_lesson_id, student_id)
 values (
         (
             SELECT group_lesson_id
@@ -1278,12 +1269,12 @@ values (
             WHERE date = '04/03/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Isadore Di Nisco'
         )
     );
-insert into student_group_lesson (group_lesson_id, person_id_student)
+insert into student_group_lesson (group_lesson_id, student_id)
 values (
         (
             SELECT group_lesson_id
@@ -1291,12 +1282,12 @@ values (
             WHERE date = '04/03/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Bryant Maxwell'
         )
     );
-insert into student_group_lesson (group_lesson_id, person_id_student)
+insert into student_group_lesson (group_lesson_id, student_id)
 values (
         (
             SELECT group_lesson_id
@@ -1304,12 +1295,12 @@ values (
             WHERE date = '04/03/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Normie Castanares'
         )
     );
-insert into student_group_lesson (group_lesson_id, person_id_student)
+insert into student_group_lesson (group_lesson_id, student_id)
 values (
         (
             SELECT group_lesson_id
@@ -1317,12 +1308,12 @@ values (
             WHERE date = '04/03/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Elfrieda Brazener'
         )
     );
-insert into student_group_lesson (group_lesson_id, person_id_student)
+insert into student_group_lesson (group_lesson_id, student_id)
 values (
         (
             SELECT group_lesson_id
@@ -1330,12 +1321,12 @@ values (
             WHERE date = '04/03/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Pearce Stapforth'
         )
     );
-insert into student_group_lesson (group_lesson_id, person_id_student)
+insert into student_group_lesson (group_lesson_id, student_id)
 values (
         (
             SELECT group_lesson_id
@@ -1343,12 +1334,12 @@ values (
             WHERE date = '04/03/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Bob Silverstone'
         )
     );
-insert into student_group_lesson (group_lesson_id, person_id_student)
+insert into student_group_lesson (group_lesson_id, student_id)
 values (
         (
             SELECT group_lesson_id
@@ -1356,12 +1347,12 @@ values (
             WHERE date = '04/03/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Louella Steger'
         )
     );
-insert into student_group_lesson (group_lesson_id, person_id_student)
+insert into student_group_lesson (group_lesson_id, student_id)
 values (
         (
             SELECT group_lesson_id
@@ -1369,12 +1360,12 @@ values (
             WHERE date = '04/03/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Addia Robart'
         )
     );
-insert into student_group_lesson (group_lesson_id, person_id_student)
+insert into student_group_lesson (group_lesson_id, student_id)
 values (
         (
             SELECT group_lesson_id
@@ -1382,7 +1373,7 @@ values (
             WHERE date = '04/03/2022'
         ),
         (
-            SELECT person_id
+            SELECT student_id
             FROM student
             WHERE name = 'Jason Van Ross'
         )
