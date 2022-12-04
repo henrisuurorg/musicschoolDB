@@ -1,3 +1,11 @@
+-------------- INFO ----------------------
+/*
+ * To test this program you need to:
+ * 	1. run create_sgms.sql
+ * 	2. run populate.sql
+ *  3. run this file
+ * */
+ 
 -- CREATE LAST_BACKUP
 INSERT INTO last_backup (date) VALUES (current_date);
 
